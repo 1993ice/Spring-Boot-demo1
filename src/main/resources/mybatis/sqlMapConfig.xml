@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置别名 -->
+	<typeAliases>
+		<!-- 特殊框架别名扫描 -->
+		<typeAlias type="cn.com.iotrust.common.mybatis.criteria.Criteria" alias="Criteria"/>
+		<package name="com.jy.system.*.*.entity"/>
+	</typeAliases>
+    <mappers>
+        <mapper resource="cn/com/iotrust/common/mybatis/criteria/CriteriaUtils.xml"/>
+    </mappers>
+</configuration>
